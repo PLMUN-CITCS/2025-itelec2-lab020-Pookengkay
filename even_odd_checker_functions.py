@@ -1,5 +1,3 @@
-def get_integer_input():
-    """Prompts the user to enter an integer and returns it."""
 def get_integer_input() -> int:
     """
     Handles user input to obtain a valid integer.
