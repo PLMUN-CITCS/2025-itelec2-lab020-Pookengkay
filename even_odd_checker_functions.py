@@ -7,19 +7,10 @@ def get_integer_input() -> int:
     """
     while True:
         try:
-            user_input = input("Enter an integer: ")
-            # Convert the input to an integer
-            return int(user_input)
             return int(input("Enter an integer: "))
         except ValueError:
             print("Invalid input. Please enter a valid integer.")
 
-def check_even_odd(number):
-    """Determines if a number is even or odd."""
-    if number % 2 == 0:
-        return f"{number} is an Even number."
-    else:
-        return f"{number} is an Odd number."
 def check_even_odd(number: int) -> str:
     """
     Determines if a given number is even or odd.
@@ -40,10 +31,5 @@ def main() -> None:
     result = check_even_odd(number)
     print(result)
 
-# Main Program Flow
-if __name__ == "__main__":
-    number = get_integer_input()  # Get the user's input
-    result = check_even_odd(number)  # Check if the number is even or odd
-    print(result)  # Output the result
-if __name__== "__main__":
+if __name__== "__main_":
     main()
